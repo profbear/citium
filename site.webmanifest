@@ -1,0 +1,14 @@
+{
+    "name": "Unbear",
+    "short_name": "Unbear",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#b3e5fc",
+    "background_color": "#b3e5fc",
+    "display": "standalone"
+}
