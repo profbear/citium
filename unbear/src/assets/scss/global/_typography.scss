@@ -1,0 +1,80 @@
+
+.tight {
+  line-height: 1.3em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  font-size: 2.0em;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin: 1.2em 0 1.2em 0;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin: 1.2em 0 1.2em 0;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin: 1.2em 0 1.2em 0;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.0em;
+  margin: 1.2em 0 1.2em 0;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 0.8em;
+  margin: 1.2em 0 1.2em 0;
+  font-weight: bold;
+}
+
+img {
+  border: 0;
+}
+
+ol, ul, li {
+  font-size: 1.0em;
+  line-height: 1.8em;
+  margin-top: 0.2em;
+  margin-bottom: 0.1em;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.8em;
+  margin: 1.2em 0 1.2em 0;
+}
+
+li > p {
+  margin-top: 0.2em;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 1.0em;
+}
+
+strong, b {
+  font-weight: bold;
+}

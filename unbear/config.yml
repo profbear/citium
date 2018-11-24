@@ -1,0 +1,31 @@
+--- # gulp config.
+
+PORT: 8000
+
+PATHS:
+  dist: "unbear"
+  # other non-img,js,sass assets
+  roots:
+  - "src/roots/**/*"
+  assets:
+  - "src/assets/**/*"
+  - "!src/assets/{img,js,scss}/**/*"
+  # other sass libs
+  sass:
+  - "node_modules/foundation-sites/scss"
+  - "node_modules/motion-ui/src"
+  # Paths to JavaScript entry points for webpack to bundle modules
+  entries:
+  - "src/assets/js/app.js"
+
+COMPATIBILITY: # css auto prefixer
+  - "last 2 versions"
+  - "ie >= 9"
+  - "ios >= 7"
+
+UNCSS_OPTIONS:
+  html:
+    - "unbear/**/*.html"
+  ignore:
+    - !!js/regexp .foundation-mq
+    - !!js/regexp ^\.is-.*
