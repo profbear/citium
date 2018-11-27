@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=544, initial-scale=1">
 
   <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -21,53 +21,12 @@
   <title>the Unbearable Professional</title>
 </head>
 <body>
-<!--top bar-->
-<div class="top-bar">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu="" role="menubar">
-      <li class="menu-text" role="menuitem">the Unbearable Professional</li>
-      <!--<li role="menuitem"><a>home</a></li>-->
-      <!--<li role="menuitem"><a>profbear</a></li>-->
-    </ul>
-  </div>
-</div>
-<br>
-<!--top bar-->
 
-<article class="grid-container">
+{{> header}}
 
-  <!--breadcrumb-->
-  <div class="grid-x cell">
-    <nav aria-label="You are here:" role="navigation">
-      <ul class="breadcrumbs">
-        <li><a>Pipeprofen</a></li>
-      </ul>
-    </nav>
-  </div>
-  <!--breadcrumb-->
+{{> body }}
 
-
-  <div class="grid-x grid-margin-x">
-    <div class="large-auto cell lame">
-      <img class="thumbnail" src="../assets/img/{{ product }}.gif"/>
-      {{> github-proj-data }}
-    </div>
-    <div class="large-auto cell">
-      <div class="grid-x">
-        {{> pipeprofen }}
-      </div>
-    </div>
-  </div>
-  <div>
-    <hr>
-    <div>
-      {{> body }}
-    </div>
-  </div>
-  <hr>
-
-  {{> footer }}
-</article>
+{{> footer }}
 
 <script src="{{ root }}assets/js/app.js"></script>
 </body>

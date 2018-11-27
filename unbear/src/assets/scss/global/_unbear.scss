@@ -1,11 +1,35 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 76%;
   color: #000;
 }
 
-.lame {
-  min-width: 475px;
+.no-biggie {
+  min-width: 463px;
+  width: 463px;
+}
+
+.github-proj-chips {
+  white-space: nowrap;
+  background: $secondary-color;
+}
+
+@font-face {
+  font-family: "Source Sans Pro Bold Italic";
+  src: url(/SourceSansPro-BoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Source Sans Pro Regular";
+  src: url(/SourceSansPro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Source Sans Pro Bold";
+  src: url(/SourceSansPro-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Source Sans Pro Italic";
+  src: url(/SourceSansPro-Italic.ttf) format('truetype');
 }

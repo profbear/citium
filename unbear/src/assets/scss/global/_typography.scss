@@ -1,6 +1,39 @@
+$unbear-font: verdana, arial, helvetica, sans-serif;
+
+body {
+  font-family: $unbear-font;
+  font-size: 90%;
+}
+
+body em {
+ font-family: $unbear-font;
+ font-style: italic;
+}
+
+body.font-loaded {
+  font-family: 'Source Sans Pro Regular';
+}
+
+body.font-loaded em {
+  font-family: 'Source Sans Pro Italic';
+  font-style: normal;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 1.0em;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
 
 .tight {
   line-height: 1.3em;
+  & li {
+    line-height: 1.3em;
+  }
 }
 
 a {
@@ -10,6 +43,14 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+body.font-loaded .menu .menu-text,
+body.font-loaded a,
+body.font-loaded strong,
+body.font-loaded b{
+  font-family: "Source Sans Pro Bold";
+  font-weight: normal;
 }
 
 h1 {
@@ -68,13 +109,4 @@ p {
 
 li > p {
   margin-top: 0.2em;
-}
-
-pre {
-  font-family: monospace;
-  font-size: 1.0em;
-}
-
-strong, b {
-  font-weight: bold;
 }

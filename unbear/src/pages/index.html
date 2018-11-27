@@ -1,38 +1,97 @@
 ---
 layout: product
 product: pipeprofen
+jetbrains_plugin_id: "11257-pipeprofen"
+plugin_home: https://plugins.jetbrains.com/plugin/
+shield_home: https://img.shields.io/jetbrains/plugin/
+shield_style: "style=for-the-badge&colorA=3c3f41"
 ---
 
-<b>Features</b>
-<ul>
-  <li>Remembers the last command arguments</li>
-  <li>Treats output containing either stderr and stdout the same</li>
-  <li>Works with multiple carets, 1 caret and no carets</li>
-  <li>Bug-free on Linux</li>
-  <li>Actively supported -
-    <a href="https://github.com/profbear/pipeprofen/issues">
-      open an issue on github</a></li>
-  <li>Unlicensed, free public domain source</li>
-</ul>
+<div class="grid-container">
+  <div class="grid-x grid-padding-x">
+    <div class="cell medium-6 medium-order-2">
+      <h2>
+        Pipeprofen
+        <small>provides temporary relief from pipes</small>
+      </h2>
 
-<p>
-  <b>General usage instructions</b>
-  <br/>
-  Invoke with
-  <kbd>ctrl</kbd>-<kbd>alt</kbd>-<kbd>shift</kbd>-<kbd>x</kbd>,
-  or by selecting text and right-click the editor to show
-  the context menu. The menu item is called <b>Pipe selected
-  text to bash</b>.
-  When no lines are selected, use the keyboard shortcut to open
-  the bash argument window.
-</p>
+      <p class="button-group tiny">
+        <a href="https://plugins.jetbrains.com/plugin/11257-pipeprofen"
+           title="visit Pipeprofen plugin @jetbrains"
+           class="button">
+          view on jetbrains
+        </a>
+        <a class="button" href="https://github.com/profbear/pipeprofen/">view on github</a>
+        <a class="button hollow secondary" href="https://github.com/profbear/pipeprofen/issues">report an issue</a>
+      </p>
 
-<p><b>Note:</b> you must have bash in your environment's PATH.</p>
+      <p>
+        <strong>Run a bash shell command on the selected lines.</strong>
+        <br/>
+        Execute a bash process that pipes the selected lines as
+        if they were an input file, same as <strong>stdin</strong>, through
+        a custom bash shell command. The output from the process
+        replaces the selection with <strong>stderr</strong> and <strong>stdout</strong>.
+        Works with multiple carets by piping each selection region
+        separately into their own process. Also works with no carets.
+      </p>
+    </div>
+    <div class="cell medium-6 medium-order-1">
+      <div class="no-biggie">
+        <h2 class="hide-for-small-only">&nbsp;</h2>
+        <img src="{{root}}/assets/img/{{ product }}.gif"/>
+        {{> github-proj-data }}
+      </div>
+    </div>
+    <div class="cell medium-6 medium-order-3">
+      <hr>
+      <strong>Features</strong>
+      <ul class="tight">
+        <li>Speedily execute any executable in your path, whilst in the IDE</li>
+        <li>Works with multiple carets, 1 caret and no carets</li>
+        <li>Shows stderr to allow failures to be visible</li>
+        <li>Remembers the last command arguments</li>
+        <li>Unlicensed, free public domain source</li>
+        <li>Bug-free on Linux and Windows</li>
+        <li>Actively supported</li>
+      </ul>
 
-<p>
-  Being able to run anything in the editor and change the buffer text
-  was heavily inspired by emacs's lisp expressions
-  <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Lisp-Eval.html#Lisp-Eval">
-    (eval-last-sexp), (eval-defun) and (eval-expression)</a>, and the
-  Shell Process plugin.
-</p>
+      <p>
+        <strong>General usage instructions</strong>
+        <br/>
+        Invoke with
+        <kbd>ctrl</kbd>-<kbd>alt</kbd>-<kbd>shift</kbd>-<kbd>x</kbd>,
+        or by selecting text and right-click the editor to show
+        the context menu. The menu item is called <strong>Pipe selected
+        text to bash</strong>.
+        When no lines are selected, use the keyboard shortcut to open
+        the bash argument window.
+      </p>
+
+      <p><strong>Note:</strong> you must have bash in your environment's PATH.</p>
+    </div>
+    <div class="cell medium-6 medium-order-4">
+      <hr class="hide-for-small-only">
+      <div class="grid-y" style="height: 398px;">
+        <div class="cell">
+          <p class="callout secondary">
+            <em>Being able to run any program in the editor and change the
+              buffer text was heavily inspired by emacs's lisp expressions
+              <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Lisp-Eval.html#Lisp-Eval">
+                (eval-last-sexp), (eval-defun) and
+                (eval-expression)</a>. This plugin is intended to be a drop-in
+              replacement for the antiquated </em>Shell Process plugin<em>.</em>
+          </p>
+        </div>
+        <div class="cell auto"></div>
+        <div class="cell text-center">
+          <img src="{{root}}/assets/img/up-big.png"
+               alt="the unbearable professor logo"
+               style="filter: opacity(50%)">
+        </div>
+        <div class="cell auto"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
