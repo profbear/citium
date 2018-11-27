@@ -33,3 +33,12 @@ body {
   font-family: "Source Sans Pro Italic";
   src: url(/SourceSansPro-Italic.ttf) format('truetype');
 }
+
+.product-logo {
+  height: 7rem;
+  filter: opacity(50%);
+}
+
+.header-logo {
+  height: 2.6rem;
+}
